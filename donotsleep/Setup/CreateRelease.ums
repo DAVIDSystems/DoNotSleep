@@ -1,0 +1,48 @@
+// Release Script für Managed Cluster
+
+$EXE = donotsleep
+$SOURCE = $SELF\..\bin\Release
+$RELEASE = $SELF\Release
+$PATH = $SOURCE\$EXE.exe
+$VERSION = VERSION($SOURCE\$EXE.exe)
+$TAG = %VERSION%
+$TEMPLATE = $SELF\Setup.Template
+$SETUP = $SELF\$EXE.nsi
+$NSIS = MAKENSIS.EXE
+$TARGET = $SELF\$EXESetup.exe
+$SIGN = $SELF\SignSetup.bat
+// $DEST = W:\SW_ARCHIV\WeConnect\$EXE
+// $EXPLORER = "EXPLORER.EXE"
+
+// DELETE RELEASE
+DELDIRCON D($RELEASE)
+
+// Release Folder
+REPLACE S($SOURCE\*.*) D($RELEASE\%SRC)
+
+// // Deletes a file
+DELFILE D($RELEASE\donotsleep.vhost.exe)
+DELFILE D($RELEASE\donotsleep.vhost.exe.config)
+DELFILE D($RELEASE\donotsleep.vhost.exe)
+
+// SIGN
+EXECUTE S($SIGN) D($RELEASE\$EXE.exe)
+
+// Patch Version Number
+PATCH S($TEMPLATE) D($SETUP) T(%VERSION%) F("$VERSION")
+
+// Create Setup
+EXECUTE S($NSIS) D($SETUP)
+
+// SIGN
+EXECUTE S($SIGN) D($TARGET)
+
+// Creates a folder if not existing
+// CREATE D($DEST)
+
+// Release Folder
+// REPLACE S($TARGET) D($DEST\$EXESetup.$VERSION.exe)
+
+// SHOW FOLDER
+// EXECUTE S($EXPLORER) D($DEST)
+

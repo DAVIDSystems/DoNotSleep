@@ -1,0 +1,10 @@
+﻿Version 1.0.1910.1:
+- accept command line parameters for sleep
+	10MIN							-> 10 Minutes
+	30MIN							-> 30 Minutes
+	1HOUR							-> 1 Hours
+	2HOUR							-> 2 Hours
+	4HOUR							-> 4 Hours
+	12HOUR							-> 8 Hours
+	INFINITE						-> until 2099
+	CUSTOM "12.01.2020 00:00"		-> until 12.01.2020 00:00  ! It uses CurrentUICulture (us format is different)
