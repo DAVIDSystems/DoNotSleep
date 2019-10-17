@@ -8,7 +8,7 @@ The tool resides in the system-tray. There are some predefined presets, which ca
 
 Via the Settings-Menu it is possible to set the ‘do-not-sleep’ period to an exact point in time.
 
-![Settings](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/images/Settings.png)
+![Settings](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/images/settings.png)
 
 It is also possible to awake the computer from sleep at a certain moment.
 
