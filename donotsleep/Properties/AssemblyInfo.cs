@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("donotsleep")]
 [assembly: AssemblyDescription("tool to prevent the computer to change to power safe mode")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DAVID Systems")]
+[assembly: AssemblyCompany("DAVIDSystems")]
 [assembly: AssemblyProduct("donotsleep")]
 [assembly: AssemblyCopyright("Copyright ©  2013-2019")]
 [assembly: AssemblyTrademark("developed by Michael Wittmann")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.19289.21")]
-[assembly: AssemblyFileVersion("1.0.19289.21")]
+[assembly: AssemblyVersion("1.0.19290.9")]
+[assembly: AssemblyFileVersion("1.0.19290.9")]

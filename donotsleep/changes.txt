@@ -8,3 +8,5 @@
 	12HOUR							-> 8 Hours
 	INFINITE						-> until 2099
 	CUSTOM "12.01.2020 00:00"		-> until 12.01.2020 00:00  ! It uses CurrentUICulture (us format is different)
+Version 1.0.19290.8:
+- updated Logging and SingleInstance to newer version

@@ -8,12 +8,14 @@ using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-using DAVIDSystems.Helper;
 using Microsoft.Win32;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.IO;
 using System.Reflection;
+
+using Easy.Logging;
+using Easy.Instance;
 
 namespace DAVIDSystems.donotsleep
 {
@@ -174,7 +176,7 @@ namespace DAVIDSystems.donotsleep
             if (_noSleep && DateTime.Now >= _stopSleeping)
             {
                 _noSleep = false;
-                Logfile.Instance().WriteToLog("Stop Trigger");
+                EasyLog.LogInfo("OnTimerEvent->Stop Trigger");
                 AllowSleep();
                 DisplayBallonMessage("Time-Marker reached: Allow sleep mode !!!", 3000);
                 rbAllow.Checked = true;
@@ -397,7 +399,7 @@ namespace DAVIDSystems.donotsleep
             if (!string.IsNullOrEmpty(message))
             {
                 notifyIcon.BalloonTipText = message;
-                Logfile.Instance().WriteToLog(message);
+                EasyLog.LogInfo(message);
             }
             notifyIcon.ShowBalloonTip(mSeconds);
         }
@@ -540,11 +542,11 @@ namespace DAVIDSystems.donotsleep
             //
             if (WaitForSingleObject(handle, INFINITE) != 0)
             {
-                Logfile.Instance().WriteToLog("Last Error = " + Marshal.GetLastWin32Error().ToString());
+                EasyLog.LogError("Last Error = {0}", Marshal.GetLastWin32Error());
             }
             else
             {
-                Logfile.Instance().WriteToLog("Timer expired @ " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                EasyLog.LogError("Timer expired @ {0}", DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                 OnAwakeFromSleeping();
             }
 

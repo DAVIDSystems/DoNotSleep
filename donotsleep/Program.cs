@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using DAVIDSystems.Helper;
+using Easy.Instance;
 
 namespace DAVIDSystems.donotsleep
 {
@@ -16,7 +16,7 @@ namespace DAVIDSystems.donotsleep
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (SingleInstance.IsSecondInstance())
+            if (SingleInstance.IsSecondInstance("donotsleep"))
             {
                 return;
             }
