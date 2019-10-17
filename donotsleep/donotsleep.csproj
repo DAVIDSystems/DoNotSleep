@@ -109,6 +109,8 @@
     </Content>
     <Content Include="icons\nosleep.ico" />
     <Content Include="icons\sleep.ico" />
+    <Content Include="images\settings.png" />
+    <Content Include="images\SystmTray.png" />
     <Content Include="nosleep.ico" />
     <Content Include="nosleepV.ico" />
     <None Include="icons\nosleepB.ico" />
