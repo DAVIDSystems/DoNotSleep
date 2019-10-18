@@ -5,7 +5,7 @@ InstallDir "C:\Program Files (x86)\DoNotSleep"
 LoadLanguageFile "${NSISDIR}\Contrib\Language files\German.nlf"
 LoadLanguageFile "${NSISDIR}\Contrib\Language files\English.nlf"
 !ifndef VERSION
-  !define VERSION "1.0.1910.1"
+  !define VERSION "1.0.19291.0"
 !endif
  
 VIProductVersion "${VERSION}"
@@ -28,7 +28,7 @@ ShowInstDetails show
  
 Section "Install"
   SetOutPath $INSTDIR
-  File /r "G:\Daten\Projects\Git\c#\Donotsleep\donotsleep\Setup\Release\*.*"
+  File /r ".\Release\*.*"
   CreateShortCut "$DESKTOP\DoNotSleep.lnk" "$OUTDIR\DoNotSleep.exe"
   writeUninstaller $INSTDIR\uninstaller.exe
 SectionEnd

@@ -28,7 +28,7 @@ ShowInstDetails show
  
 Section "Install"
   SetOutPath $INSTDIR
-  File /r "G:\Daten\Projects\Git\c#\Donotsleep\donotsleep\Setup\Release\*.*"
+  File /r ".\Release\*.*"
   CreateShortCut "$DESKTOP\DoNotSleep.lnk" "$OUTDIR\DoNotSleep.exe"
   writeUninstaller $INSTDIR\uninstaller.exe
 SectionEnd
