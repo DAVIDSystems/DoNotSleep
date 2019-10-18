@@ -1,5 +1,5 @@
 # DoNotSleep
-DoNotSleep is a tool, to prevent the computer change to a power-safe mode, for short period of time, without changing the global power-settings.
+DoNotSleep is a tool, to prevent the computer switch to a power-safe mode, for a short period of time, without changing the global power-settings.
 
 The tool resides in the system-tray. There are some predefined presets, which can be quickly selected to sleep for short period.
 
@@ -24,4 +24,4 @@ It is also possible to awake the computer from sleep at a certain moment.
 * INFINITE	-	-> until 2099
 * CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00
 ### Parameter2:
-* is needed only when Parameter1 => CUSTOM : ! It is DateTime value and uses CurrentUICulture formats…
+* is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
