@@ -26,5 +26,5 @@ It is also possible to awake the computer from sleep at a certain moment.
 ### Parameter2:
 * is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
 # Download 
-Hint: Right-Click and select Save as ....
+* Hint: Right-Click 'Setup' and select Save as ....
 [Setup](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/Setup/SetupDoNotSleep.exe "Download Setup")
