@@ -14,6 +14,12 @@ It is also possible to awake the computer from sleep at a certain moment.
 
 ## CommandLineParameters:
 ### DoNotSleep.exe Parameter1 [Parameter2]
+
+| Parameter1    | Parameter2              | Description |
+| ------------- |:-----------------------:| -----------:|
+| 10MIN         | -> sleep for 10 Minutes | |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 ### Parameter1:
 * 10MIN	-	-> sleep for 10 Minutes
 * 30MIN	-	-> sleep for 30 Minutes
@@ -25,13 +31,9 @@ It is also possible to awake the computer from sleep at a certain moment.
 * CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00
 ### Parameter2:
 * is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
-# Download 
+# Download Setup
 * Hint: Right-Click 'Setup' and select 'save link as ...'
 
 [Setup](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/Setup/SetupDoNotSleep.exe "Download Setup")
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
