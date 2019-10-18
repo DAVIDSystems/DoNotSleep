@@ -15,20 +15,17 @@ It is also possible to awake the computer from sleep at a certain moment.
 ## CommandLineParameters:
 ### DoNotSleep.exe Parameter1 [Parameter2]
 
-| Parameter1    | Parameter2              | Description |
-| ------------- |:-----------------------:| -----------:|
-| 10MIN         | -> sleep for 10 Minutes | |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-### Parameter1:
-* 10MIN	-	-> sleep for 10 Minutes
-* 30MIN	-	-> sleep for 30 Minutes
-* 1HOUR	-	-> sleep for 1 Hours
-* 2HOUR	-	-> sleep for 2 Hours
-* 4HOUR	-	-> sleep for 4 Hours
-* 12HOUR	-	-> sleep for 12 Hours
-* INFINITE	-	-> until 2099
-* CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00
+| Parameter1    | Parameter2  | Description |
+| ------------- |:-----------:| -----------:|
+| 10MIN         |             | sleep for 10 minutes |
+| 30MIN         |             | sleep for 30 minutes |
+| 1HOUR         |             | sleep for 1 hours    |
+| 2HOUR         |             | sleep for 2 hours    |
+| 4HOUR         |             | sleep for 4 hours    |
+| 8HOUR         |             | sleep for 12 hours   |
+| INFINITE      |             | sleep until 2099     |
+| CUSTOM        | Datetime    |i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00 |
+
 ### Parameter2:
 * is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
 # Download Setup
