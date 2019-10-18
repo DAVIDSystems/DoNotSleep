@@ -22,4 +22,6 @@ It is also possible to awake the computer from sleep at a certain moment.
 * 4HOUR	-	-> sleep for 4 Hours
 * 12HOUR	-	-> sleep for 12 Hours
 * INFINITE	-	-> until 2099
-* CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00  ! It uses CurrentUICulture formats…
+* CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00
+### Parameter2:
+* is needed only when Parameter1 => CUSTOM : ! It is DateTime value and uses CurrentUICulture formats…
