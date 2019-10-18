@@ -12,15 +12,14 @@ Via the Settings-Menu it is possible to set the ‘do-not-sleep’ period to an 
 
 It is also possible to awake the computer from sleep at a certain moment.
 
-### CommandLineParameters:
-## DoNotSleep.exe Parameter1 [Parameter2]
-Parameter1:
-Parameter1:	Parameter2:	Description:
-10MIN	-	-> sleep for 10 Minutes
-30MIN	-	-> sleep for 30 Minutes
-1HOUR	-	-> sleep for 1 Hours
-2HOUR	-	-> sleep for 2 Hours
-4HOUR	-	-> sleep for 4 Hours
-12HOUR	-	-> sleep for 12 Hours
-INFINITE	-	-> until 2099
-CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00  ! It uses CurrentUICulture formats…
+## CommandLineParameters:
+### DoNotSleep.exe Parameter1 [Parameter2]
+### Parameter1:
+* 10MIN	-	-> sleep for 10 Minutes
+* 30MIN	-	-> sleep for 30 Minutes
+* 1HOUR	-	-> sleep for 1 Hours
+* 2HOUR	-	-> sleep for 2 Hours
+* 4HOUR	-	-> sleep for 4 Hours
+* 12HOUR	-	-> sleep for 12 Hours
+* INFINITE	-	-> until 2099
+* CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00  ! It uses CurrentUICulture formats…
