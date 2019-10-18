@@ -25,5 +25,6 @@ It is also possible to awake the computer from sleep at a certain moment.
 * CUSTOM	i.e “12.01.2020 00:00”	-> until 12.01.2020 00:00
 ### Parameter2:
 * is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
-# Download
+# Download 
+Hint: Right-Click and select Save as ....
 [Setup](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/Setup/SetupDoNotSleep.exe "Download Setup")
