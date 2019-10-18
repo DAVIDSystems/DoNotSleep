@@ -26,5 +26,12 @@ It is also possible to awake the computer from sleep at a certain moment.
 ### Parameter2:
 * is needed only when Parameter1 => CUSTOM : ! It is a DateTime value and uses CurrentUICulture formats…
 # Download 
-* Hint: Right-Click 'Setup' and select Save as ....
+* Hint: Right-Click 'Setup' and select 'save link as ...'
+
 [Setup](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/Setup/SetupDoNotSleep.exe "Download Setup")
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
