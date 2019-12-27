@@ -1,7 +1,7 @@
 # DoNotSleep
 DoNotSleep is a tool, to prevent the computer switch to a power-safe mode, for a short period of time, without changing the global power-settings.
 
-The tool resides in the system-tray. There are some predefined presets, which can be quickly selected to sleep for short period.
+The tool resides in the system-tray. There are some predefined presets, which can be quickly selected to prohibit sleep for short period.
 
 
 ![System Tray](https://github.com/DAVIDSystems/DoNotSleep/blob/master/donotsleep/images/SystmTray.png)
